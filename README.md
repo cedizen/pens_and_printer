@@ -1,3 +1,5 @@
+![Python](https://img.shields.io/badge/Python-blue?logo=python) ![Jupyter](https://img.shields.io/badge/Jupyter-orange?logo=jupyter) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 # Projet : Pens and Writer
 
 Avec l’idée de lancer une nouvelle gamme de fournitures de bureau, l’entreprise Pens and Writer décide de tester 3 techniques de vente et de collecter des données afin d’identifier celle qui offre le meilleur taux de conversion.
