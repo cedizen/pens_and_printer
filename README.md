@@ -1,30 +1,92 @@
 ![Python](https://img.shields.io/badge/Python-blue?logo=python) ![Jupyter](https://img.shields.io/badge/Jupyter-orange?logo=jupyter) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-# Projet : Pens and Writer
+# Pens and Printer
 
-Avec l’idée de lancer une nouvelle gamme de fournitures de bureau, l’entreprise Pens and Writer décide de tester 3 techniques de vente et de collecter des données afin d’identifier celle qui offre le meilleur taux de conversion.
+Ce petit projet tourne autour d'un problème simple : choisir des stylos et une imprimante en respectant certaines contraintes (budget, quantités, etc.), et voir comment on peut le modéliser proprement.
 
-## Dataset : `product_sales.csv`
+L'objectif est d'illustrer une démarche de résolution de problème avec un peu de code et/ou des outils d'optimisation, plutôt que de rester sur un énoncé théorique.
 
-- numéro de semaine  
-- méthode de vente  
-- id customer (notion de RGPD)  
-- nombre de ventes  
-- chiffre d'affaires  
-- ancienneté (en nombre d’années)  
-- Nb visites du site  
-- état  
+## À propos du projet
 
-## Méthodologie
+À partir de données ou d'hypothèses de départ (prix, quantités, contraintes), le projet cherche à répondre à une question du type :
 
-Pendant 6 semaines, 3 techniques de vente sont testées afin de déterminer la plus efficace pour assurer un taux de conversion optimal :  
-- Appel à froid : sans qualification préalable de la clientèle.  
-- Email seul.  
-- Email + appel de suivi.  
+> Que peut-on acheter (stylos, imprimante) en respectant un budget donné, tout en maximisant ou en respectant certaines conditions ?
 
-## Résultats de l’étude
+Selon la version du projet, cela peut être traité :
+- par une approche “brute” en Python ;
+- avec des outils d’optimisation ;
+- ou simplement via une modélisation plus claire du problème.
 
-- Meilleur taux de conversion : *Email + appel de suivi*.  
-- Pire taux de conversion : *Appel à froid*.  
-- Plus un client est fidèle, moins il est sensible à la nouveauté.  
-- La stratégie doit se concentrer sur les clients de moins de 5 ans d’ancienneté.
+## Ce qu'on trouve dans ce repo
+
+- un notebook ou un script principal avec la résolution du problème ;
+- éventuellement des fichiers de données (prix, contraintes, etc.) ;
+- ce `README.md` pour expliquer l’idée générale.
+
+Tu peux adapter cette section avec les vrais noms de fichiers, par exemple :
+
+- `pens_and_printer.ipynb` : notebook principal ;
+- `data/` : données éventuelles.
+
+## Outils utilisés
+
+Le projet utilise principalement :
+
+- Python
+- `pandas` si des données tabulaires sont manipulées
+- éventuellement des bibliothèques d’optimisation ou de calcul
+- Jupyter Notebook pour la partie interactive
+
+À adapter selon les packages que tu utilises vraiment dans le code.
+
+## Lancer le projet
+
+1. Cloner le dépôt :
+
+```bash
+git clone https://github.com/cedizen/pens_and_printer.git
+cd pens_and_printer
+```
+
+2. Créer un environnement virtuel si besoin :
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+Sous Windows :
+
+```bash
+.\.venv\Scripts\activate
+```
+
+3. Installer les dépendances (si un `requirements.txt` est présent) :
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Lancer Jupyter Notebook ou exécuter le script :
+
+```bash
+jupyter notebook
+# ou
+python nom_du_script.py
+```
+
+## Objectif du projet
+
+Le projet sert surtout d’exemple pour :
+
+- poser clairement un problème avec contraintes ;
+- le traduire en code / en modèle ;
+- tester une façon de le résoudre de manière reproductible.
+
+C’est un projet court, mais utile pour montrer une démarche de résolution pas à pas.
+
+## Auteur
+
+Projet réalisé par Cédric Berthezene.
+
+GitHub : [cedizen](https://github.com/cedizen)
